@@ -129,7 +129,7 @@ public class ApolloOpenApiMockIntegrationTest {
     assertEquals("GET", request.method);
     assertEquals("/openapi/v1/envs/DEV/apps/SampleApp/clusters/default/namespaces/application",
         request.path);
-    assertEquals("fillItemDetail=true", request.query);
+    assertEquals("fillItemDetail=true&extendInfo=false", request.query);
     assertEquals("namespace-token", request.authorization);
   }
 

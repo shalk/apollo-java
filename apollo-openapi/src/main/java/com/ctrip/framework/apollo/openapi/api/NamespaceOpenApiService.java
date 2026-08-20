@@ -34,7 +34,16 @@ public interface NamespaceOpenApiService {
    * Retrieves a single namespace
    * @since 2.4.0
    */
-  OpenNamespaceDTO getNamespace(String appId, String env, String clusterName, String namespaceName, boolean fillItemDetail);
+  default OpenNamespaceDTO getNamespace(String appId, String env, String clusterName, String namespaceName, boolean fillItemDetail) {
+    return getNamespace(appId, env, clusterName, namespaceName, fillItemDetail, false);
+  }
+
+  /**
+   * Retrieves a single namespace, optionally including extra info such as {@code parentAppId}
+   * of an associated public namespace.
+   * @since 2.6.0
+   */
+  OpenNamespaceDTO getNamespace(String appId, String env, String clusterName, String namespaceName, boolean fillItemDetail, boolean extendInfo);
 
   default List<OpenNamespaceDTO> getNamespaces(String appId, String env, String clusterName) {
     return getNamespaces(appId, env, clusterName, true);
@@ -44,7 +53,16 @@ public interface NamespaceOpenApiService {
    * Retrieves a list namespaces
    * @since 2.4.0
    */
-  List<OpenNamespaceDTO> getNamespaces(String appId, String env, String clusterName, boolean fillItemDetail);
+  default List<OpenNamespaceDTO> getNamespaces(String appId, String env, String clusterName, boolean fillItemDetail) {
+    return getNamespaces(appId, env, clusterName, fillItemDetail, false);
+  }
+
+  /**
+   * Retrieves a list namespaces, optionally including extra info such as {@code parentAppId}
+   * of an associated public namespace.
+   * @since 2.6.0
+   */
+  List<OpenNamespaceDTO> getNamespaces(String appId, String env, String clusterName, boolean fillItemDetail, boolean extendInfo);
 
   OpenAppNamespaceDTO createAppNamespace(OpenAppNamespaceDTO appNamespaceDTO);
 
