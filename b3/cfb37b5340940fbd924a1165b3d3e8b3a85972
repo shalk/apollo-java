@@ -1,0 +1,35 @@
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/NamespaceOpenApiService.java
+  s_2c77b5b26822df::t_38e30e404981a8 37-46,56-65
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/NamespaceOpenApiServiceTest.java
+  s_2c77b5b26822df::t_25cbfe59c308d6 82
+  s_2c77b5b26822df::t_8e0a012c24f453 87-126
+  s_2c77b5b26822df::t_abd97970616dc1 178-206
+  s_2c77b5b26822df::t_5567aeb8f008c8 25,42
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceDTO.java
+  s_2c77b5b26822df::t_138206d9558da9 37-38
+  s_2c77b5b26822df::t_688573b62c9d46 95-102,113
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceExtendDTO.java
+  s_2c77b5b26822df::t_a04a7d0be98edc 1-64
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/NamespaceOpenApiService.java
+  s_2c77b5b26822df::t_1240337a335b63 44,62,74,89
+CHANGES.md
+  s_2c77b5b26822df::t_360fbbddee96fe 10
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiMockIntegrationTest.java
+  s_2c77b5b26822df::t_c71549467b6866 132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b3cfb37b5340940fbd924a1165b3d3e8b3a85972",
+  "prompts": {},
+  "sessions": {
+    "s_2c77b5b26822df": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de8520db-9eb4-4d0c-971c-f66cd6f281b0",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
