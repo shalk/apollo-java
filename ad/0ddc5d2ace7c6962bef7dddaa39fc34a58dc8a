@@ -1,0 +1,59 @@
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiMockIntegrationTest.java
+  s_5b010e625bc183::t_41c1625d102287 136-174
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/NamespaceOpenApiService.java
+  s_5b010e625bc183::t_866730c308d817 37,42-46,49-51,61,66-70,73-75
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiClient.java
+  h_19a015edaf416b 176
+  s_1934be557875bd::t_8c9fc7e7284fd0 137
+  s_1934be557875bd::t_5d69ef8ee0788f 138
+  s_1934be557875bd::t_af7622fcdc7490 132-133,136,139
+  s_1934be557875bd::t_6c1fb1c986c2eb 171,173-174,177
+  s_1934be557875bd::t_7ac09a8f4889c7 175
+  s_1934be557875bd::t_c59a35ed506c68 134-135
+  s_1934be557875bd::t_89bdd38ed4a8c5 140
+  s_1934be557875bd::t_8925b134ec7dda 172
+  s_1934be557875bd::t_83e045a2adda95 178
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/NamespaceOpenApiServiceTest.java
+  s_5b010e625bc183::t_9e089a7eff9001 143,148
+  s_5b010e625bc183::t_65d8a8bc98ca44 167
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/NamespaceOpenApiService.java
+  s_5b010e625bc183::t_17df46188aa7a0 79-82
+  s_5b010e625bc183::t_becf56531559c0 44-47
+  s_5b010e625bc183::t_6969f4788a8d26 43
+  s_5b010e625bc183::t_95f6c79b12287e 78
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceExtendDTOTest.java
+  s_5b010e625bc183::t_d1495204b25616 1-62
+CHANGES.md
+  s_5b010e625bc183::t_5a142c0882942f 10
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceDTOTest.java
+  s_5b010e625bc183::t_340b8c8a5fd1dc 1-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ad0ddc5d2ace7c6962bef7dddaa39fc34a58dc8a",
+  "prompts": {},
+  "humans": {
+    "h_19a015edaf416b": {
+      "author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  },
+  "sessions": {
+    "s_1934be557875bd": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786934942792",
+        "model": "unknown"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    },
+    "s_5b010e625bc183": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0dc1cc41-8419-48ee-922a-34445c0fc83c",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
