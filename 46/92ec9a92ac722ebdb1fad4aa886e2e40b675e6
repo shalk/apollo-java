@@ -1,0 +1,31 @@
+apollo-compat-tests/apollo-spring-compat-it/src/test/java/com/ctrip/framework/apollo/compat/spring/SpringCompatibilityTestSupport.java
+  s_2d359cac695061::t_0285797f2112c3 41,56-57
+apollo-compat-tests/apollo-spring-compat-it/src/test/java/com/ctrip/framework/apollo/compat/spring/SpringXmlCompatibilityTest.java
+  s_2d359cac695061::t_0285797f2112c3 72-73,78-79
+.github/workflows/build.yml
+  s_2d359cac695061::t_2f9ac8832acfb2 70-71
+apollo-compat-tests/apollo-spring-boot-compat-it/src/test/java/com/ctrip/framework/apollo/compat/springboot/ApolloSpringBootCompatibilityTest.java
+  s_2d359cac695061::t_0285797f2112c3 75,78,151-152,161-162,170-171,175-182,196,320,357-358,362-363,380-381,466-467
+apollo-compat-tests/apollo-spring-compat-it/src/test/java/com/ctrip/framework/apollo/compat/spring/SpringAnnotationCompatibilityTest.java
+  s_2d359cac695061::t_0285797f2112c3 79-80,97-98,103-104,137-138,140-141,145-146,151-152,229,270-271,275-276
+.mergify.yml
+  s_2d359cac695061::t_6a015353c4546e 34,60
+apollo-compat-tests/apollo-api-compat-it/src/test/java/com/ctrip/framework/apollo/compat/api/ApolloApiCompatibilityTest.java
+  s_2d359cac695061::t_0285797f2112c3 87-92,95-96,118-119,143-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4692ec9a92ac722ebdb1fad4aa886e2e40b675e6",
+  "prompts": {},
+  "sessions": {
+    "s_2d359cac695061": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2c0f2cbd-dacb-4bcc-8a5d-9187bae0d46b",
+        "model": "glm-5.2"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
