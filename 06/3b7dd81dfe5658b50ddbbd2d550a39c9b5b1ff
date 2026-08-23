@@ -1,0 +1,19 @@
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/api/NamespaceOpenApiServiceTest.java
+  s_5b010e625bc183::t_a8dff87205ae65 1-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "063b7dd81dfe5658b50ddbbd2d550a39c9b5b1ff",
+  "prompts": {},
+  "sessions": {
+    "s_5b010e625bc183": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0dc1cc41-8419-48ee-922a-34445c0fc83c",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
