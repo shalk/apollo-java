@@ -1,0 +1,27 @@
+.github/PULL_REQUEST_TEMPLATE.md
+  h_19a015edaf416b 16
+  s_75f1ce45a17c26::t_20ae7dc9aa536e 14
+CONTRIBUTING.md
+  s_75f1ce45a17c26::t_406b31581365a9 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ef9100c3fe1659d75d3f929d841e1b1a90a9157e",
+  "prompts": {},
+  "humans": {
+    "h_19a015edaf416b": {
+      "author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  },
+  "sessions": {
+    "s_75f1ce45a17c26": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cc5d5fa8-341a-4ff3-97f3-b6876cc846ee",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
