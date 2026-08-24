@@ -1,0 +1,26 @@
+.github/workflows/build.yml
+  s_2d359cac695061::t_349dd8ca82661f 49-70
+pom.xml
+  s_2d359cac695061::t_9088357a575a73 397-414
+  s_2d359cac695061::t_0f090736f6ab34 79
+apollo-buildtools/style/eclipse-java-google-style.xml
+  s_2d359cac695061::t_ab7f71e842addb 1-353
+apollo-buildtools/style/license/apollo-license
+  s_2d359cac695061::t_7b67f060dc2a9e 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "49a3c04f3cf4fd32c6f5c8baf2361a4d305cfdf6",
+  "prompts": {},
+  "sessions": {
+    "s_2d359cac695061": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2c0f2cbd-dacb-4bcc-8a5d-9187bae0d46b",
+        "model": "glm-5.2"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}

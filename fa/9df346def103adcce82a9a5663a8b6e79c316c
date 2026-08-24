@@ -1,0 +1,19 @@
+.git-blame-ignore-revs
+  s_2d359cac695061::t_fb56188b6ad543 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fa9df346def103adcce82a9a5663a8b6e79c316c",
+  "prompts": {},
+  "sessions": {
+    "s_2d359cac695061": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2c0f2cbd-dacb-4bcc-8a5d-9187bae0d46b",
+        "model": "glm-5.2"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}

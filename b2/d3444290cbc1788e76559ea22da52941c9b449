@@ -1,0 +1,570 @@
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/annotation/ApolloProcessor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 66
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/ApolloClientMonitorContext.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 39-48
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/importer/ApolloConfigDataLoader.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 67-68,77-78
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/AppOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 32-36,48,54,62-63,66-67,69-70,81,91-92,98-101
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/DeprecatedPropertyNotifyUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 26-27,30-32
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/stress/ApolloClientMonitorStressTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51-52
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/webclient/ApolloClientLongPollingExtensionInitializer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37-38,54-55,58-59
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/util/BeanRegistrationUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 38,41-42,46-49,52-53,57-58,72-73,75-76,82-83,96
+apollo-plugin/apollo-plugin-log4j2/src/main/java/com/ctrip/framework/apollo/plugin/log4j2/ApolloClientConfigurationFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59,63-64,69-70,78-81,93-94
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientNamespaceApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44-45,47-48,54,80-81,119,143-147,150-151,153,178
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/importer/ApolloConfigDataLocationResolver.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37-38
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/ConfigManager.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/signature/SignatureTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 54
+apollo-core/src/test/java/com/ctrip/framework/test/tools/AloneWith.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/event/ApolloClientMonitorEventPublisher.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29-30,35-36,46
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/ByteUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 23-24
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/escape/EscapeUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 24-26,28-31,33-34,36-40
+apollo-mockserver/src/test/java/com/ctrip/framework/apollo/mockserver/ApolloMockServerApiWhileCacheDirSpecifiedTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 56-57,61-62,69-70
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/XmlConfigPlaceholderTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 62-63,85-86,173-174
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/system/ApolloClientEnvironmentVariablesCompatibleTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44-47
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/NullClientThreadPoolMonitorApiTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 50
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/webclient/ApolloWebClientHttpClient.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 42-43,68-69,78-79,107-108,131-132
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/spi/ApolloConfigRegistrarHelperTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36-37
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/OrganizationOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 25-29
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/annotation/ApolloConfig.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 58
+apollo-client/src/main/java/com/ctrip/framework/apollo/build/ApolloInjector.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 38-39,55-56,66-67
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/utils/DeferredLoggerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 83-90,94-101
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/config/CachedCompositePropertySourceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 85,122
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/exporter/AbstractApolloClientMetricsExporter.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37-38
+apollo-core/src/test/java/com/ctrip/framework/apollo/tracer/internals/NullMessageProducerManagerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 41
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/date/DateUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28-29,31-39
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenAppNamespaceDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 20-89
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/property/SpringValueDefinitionProcessor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 53-54,65-66,73-74,78-81,94-95,115-116
+apollo-client/src/test/java/com/ctrip/framework/apollo/ConfigServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 54,68-70,81-82,93-95,109-110,122-123,136-137,154-155,157-164,205,210,274-275,280-281
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/NullClientThreadPoolMonitorApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientBootstrapArgsApiTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 90
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/properties/ApolloClientProperties.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36,42
+apollo-client/src/test/java/com/ctrip/framework/apollo/MockedConfigService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 60-65,76,83-84,90-92,97-98,104-105,112-114,117,126-127,131-132,136-138,143-144,152-154,158-159,162-164,167-169,178-180,184-186
+apollo-client/src/main/java/com/ctrip/framework/apollo/spi/DefaultConfigFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 81,88,98-99,104-105,148-149,158-159,161,175-176
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/dto/ApolloConfig.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 41,43
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/property/SpringValue.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44-45,53,58-59,68,144-145,147-148
+apollo-core/src/main/java/com/ctrip/framework/apollo/tracer/internals/cat/CatTransaction.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 34,51
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientThreadPoolApiTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43-44
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/DefaultProviderManager.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 46-47,66-67
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/ResourceUtils.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 34,106
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/DefaultConfigManagerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 90,143-144
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/property/PlaceholderHelper.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 47-48,52-53,64-67,84-85,105-106,119-120,129-130,141-142,146-148
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/annotation/SpringValueProcessor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 53-54,75-76,105,110,138-141,150-151,158-159
+apollo-mockserver/src/test/java/com/ctrip/framework/apollo/mockserver/ApolloMockServerSpringIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 69-70,93-94
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/NetworkInterfaceManager.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 125
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/exporter/DefaultApolloClientMetricsExporterFactoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 73-74,91
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/dto/ApolloNotificationMessages.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 68-69
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/api/ApolloClientThreadPoolMonitorApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 61
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/JavaConfigPlaceholderAutoUpdateTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 69-70,74-75,82-83,100,103-104,111-112,127-128,132-133,143-144,166-167,177-178,200-201,205-206,213-214,231-234,236-237,240-241,248-249,251-252,277-280,285-286,293-294,305-306,312,314-315,319-320,327-328,342-343,345-346,348-349,356-357,359-360,374,377-378,385-386,404-405,407-408,410-411,418-419,421-422,435-436,440-441,466-467,474-475,489-492,494-495,498-499,522-523,527-528,552-553,557-558,585-586,593-594,609-610,614-615,622-623,641-642,646-647,654-655,673-674,678-679,686-687,705-706,710-711,718-719,738-740,744-745,751-753,769-771,775-776,782-784,801-802,806-807,809-810,814-816,837-838,844-845,847-848,852-853,911-912,928-929,962-963,975-976,1003-1004,1031-1032,1034-1035,1079-1080,1091-1092,1270-1271
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/provider/DefaultServerProvider.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 39-40,59-60,66-67,216
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/config/CachedCompositePropertySource.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28
+apollo-client/src/main/java/com/ctrip/framework/apollo/enums/ConfigSourceType.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 25-26
+apollo-mockserver/src/test/java/com/ctrip/framework/apollo/mockserver/ApolloMockServerApiTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 176
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/DeferredLogCache.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36-37,39
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/internals/PureApolloConfig.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37,48,69-70,79-80
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/ConfigMonitorInitializer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 49-50,74-76,81-91,98-99,102,106-109,139
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/spi/DefaultApolloConfigRegistrarHelper.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43-44,51-54,59-60,67-68,76-77,82-83,86-93,95-96,100-101,108-109,115,118-119,129-130
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/util/SpringInjector.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40-41
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/provider/DefaultApplicationProvider.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 35-36,121,137,168,172-173,196-197,201-203,212-213,232-233,238-240,244,251-253,258-259,264-266
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientExceptionApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40-41,49-50,76
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/AbstractConfigFile.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59-60,78-79,81-82,105-106,128-129,157-158
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/system/ApolloClientSystemPropertyInitializer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 50-51,55-56
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/spi/DefaultConfigPropertySourcesProcessorHelper.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32,35-36,38-39,42-47,59-60,69
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/util/PropertySourcesUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37-38,41-42
+apollo-client/src/test/java/com/ctrip/framework/apollo/spi/RandomConfigServiceLoadBalancerClientTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 30-31,59
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/ClusterOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28-29,44-45,50-51,62-63,68-69
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/NullClientExceptionMonitorApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/LocalFileConfigRepository.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51-52,99,120,151,169,176,189-190,195-196,205-206,222-224,250-251,258-259,269,286-287
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/utils/UrlUtilsTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenPageDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-57
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/ExceptionUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 42,55-56,64
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/PropertiesUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 47
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/enums/ApolloClientMessagingType.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 32
+apollo-client/src/main/java/com/ctrip/framework/apollo/exceptions/ApolloConfigStatusCodeException.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 22
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/annotation/ApolloConfigRegistrar.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 32-33,36-37
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/ClusterOpenApiServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 65-66,96-97
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/MetaDomainConsts.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 132-133,170-171,183,225-226
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/extend/IdempotentHttpMethod.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 30,38
+apollo-plugin/apollo-plugin-client-prometheus/src/test/java/com/ctrip/framework/apollo/monitor/internal/exporter/impl/PrometheusApolloClientMetricsExporterTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 18,31-78
+apollo-client/src/main/java/com/ctrip/framework/apollo/ConfigFile.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/io/ByteOrderMark.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 46,49-50,54,57-58,62
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/SimpleConfig.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 84-85,119-120,127-130
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/ConfigMonitorInitializerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37-42,44-51,53-56,58-65,67-72,74-80,82-86,88-90
+apollo-client/src/main/java/com/ctrip/framework/apollo/model/ConfigChangeEvent.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31,37,53
+apollo-core/src/test/java/com/ctrip/framework/apollo/BaseIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 123-124
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/utils/DeferredLogCacheTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36-37,39-42,44-45,47-55,57,59-62,64-68
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/ClassLoaderUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59-60
+apollo-core/src/test/java/com/ctrip/framework/foundation/internals/provider/DefaultServerProviderTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 57-60
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/utils/ByteUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 26-27,32-33,38-39,44-45,51
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/tracer/ApolloClientMonitorMessageProducerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 83
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/tracer/ApolloClientMessageProducerComposite.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 83
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenClusterDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43-46
+apollo-client/src/main/java/com/ctrip/framework/apollo/spi/DefaultConfigRegistry.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 35-36,50-51
+apollo-mockserver/src/main/java/com/ctrip/framework/apollo/mockserver/ApolloTestingServer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 55-102,104-114,116-122,124-142,144,146-148,150-152,154-157,159-162,164-165,167-170,172,174-178,180-192,195-198,200-208,210-212,214-223,225-237,239-243,245-265,267-314,316-340
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/InstanceOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 21-26
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/OrganizationOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29-32,34-36,38-41,43-46,49
+  s_2d359cac695061::t_484550785b1eba 50
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/annotation/ApolloAnnotationProcessor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 60-61,67-68,120-121,139-140,199-200,233-234,249-250,262-263
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/importer/ApolloConfigDataLoaderInitializer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 58-59,103-106,108,114,122-124
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiClientTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29-30
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/InterestedConfigChangeEventTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 70-71,75-78,106
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/ApolloClientMonitorConstant.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 52-53,66-67,70-71,76-81,83-92
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/boot/ApolloApplicationContextInitializer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 80-82,85-88,90-92,102-103,111-114,130-133,142-143,150-151,153-154,159-160,163-166,182-183,210-211,216-221,226-229
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/constant/ApolloOpenApiConstants.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 20-21
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/property/SpringValueRegistry.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 48-49,71-73,90-91
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceLockDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51-52
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/NetUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 71
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/DefaultInjector.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 58-59,91,115-116
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/ConfigUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 55-56,58-67,148,151,156,366-367,369-371,376-377,385-386,407-408,411-412,416-417,421-422,431,468-469,489-490,539-540,547-548,552-554,558-559,565-566,569,578-579,584,596-598,606-608,616-617,622,645-646,652
+apollo-core/src/test/java/com/ctrip/framework/foundation/internals/UtilsTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 26,28-31,33-36,38-41,43-46,48-51,53-56,58-62,64-68,70-74,76-81,83-87
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/AppOpenApiServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 66-67
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/ConfigServiceLocator.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 79,108-109,113-114,125-127,148-149,156-157,159-160,166-167,204-206,217,223-230,275-276,278,282-283
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/system/ApolloClientSystemPropertiesCompatibleTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44-45
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenGrayReleaseRuleDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 21-22,24,26,28,30,32-34,36-38,40-42,44-46,48-50,52-54,56-58,60-62,64-66,68-70
+apollo-mockserver/src/main/java/com/ctrip/framework/apollo/mockserver/MockApolloExtension.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28-54
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/enums/Env.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/webclient/customizer/spi/ApolloClientWebClientCustomizerFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 48-50
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/exporter/AbstractApolloClientMetricsExporterTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 85-86,93,121
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/config/NamespaceHandler.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 35-36,58
+apollo-mockserver/src/main/java/com/ctrip/framework/apollo/mockserver/EmbeddedApollo.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 49-50
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/importer/PureApolloConfigTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51,60,68-73,78-83
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/exception/ApolloOpenApiException.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 23-25
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/parser/ParserException.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 20-22,24-26
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/NullClientNamespaceMonitorApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28-29
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/provider/DefaultNetworkProvider.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59-60
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/enums/MetricTypeEnums.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 32
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/JavaConfigAnnotationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 85-86,121-122,150-151,243-244,246,317-318,320,351-352,357-358,360-361,373-374,386-387,389-390,408-410,412-413,419-420,447-448,456-457,480-481,540-541,602-603,615-616,633-634,653-656,663-664,681-682,684-685,718-719,721-722,724-725,736-737,739-740,859,867,874-876,884,891-892,898-900,911,1167,1174-1175,1177-1178,1212,1219,1223-1224,1249-1250,1273,1279,1282,1291
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenEnvClusterDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44
+apollo-client/src/test/java/com/ctrip/framework/apollo/integration/ConfigIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 87-89,115-117,133-135,137,151-153,156,188,192-193,234,246-247,452,491-492,550,552,604,607,621-623,628
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/ConfigServiceLocatorTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44-45,77,85-86,94-95,109-110
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/ReleaseOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29-30,37-38,51-52,58-61,66-67,78-79,85-87,96-98,102-103
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientBootstrapArgsApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43-44,46-47,65,71-72,81-82,94,96
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/http/DefaultHttpClient.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 90,140
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/YamlConfigFileTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 120
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/ItemOpenApiServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 74-75,90-93,125-126,169-170,192-195,234-238,264-265,271-274,295-296,306-307,316-317,323-326,336-337,345-346,354-355,363-364
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/importer/ApolloConfigDataLoaderInitializerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 86-87,91-92
+apollo-client/src/test/java/com/ctrip/framework/apollo/kubernetes/KubernetesManagerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 52-244
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiClient.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 58-59,66-68,130-131,162-163,171-172,194-195,206-207,215,231-232,239-240,249-250,258-259,266-267,285-286,355-356,362-368,381-382
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/MachineUtil.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51,62
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/io/BOMInputStream.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 131-132,134-145,154-155,161-162
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/initialize/ApolloClientPropertiesFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31,33-34
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/initialize/ApolloClientExtensionInitializeFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 47-50,60-61,72-73,76-77,80-81
+apollo-core/src/test/java/com/ctrip/framework/test/tools/AloneClassLoader.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43
+apollo-client/src/test/java/com/ctrip/framework/apollo/spi/DefaultConfigFactoryFileCachePropertyTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 57-60,70-73
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/AbstractConfig.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 75,80,102-103,136-137,155-156,174-175,193-194,212-213,231-232,250-251,296-297,316-317,332-333,348-349,368-369,385-386,392-393,403-404,425-429,451-452,459-460,469-470,489-490,495-496,511-512,542-543,570,576,594-595
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/ApolloThreadFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 101
+apollo-core/src/main/java/com/ctrip/framework/apollo/tracer/Tracer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 91
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/AbstractConfigRepository.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 38-39,47-48
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/importer/ApolloConfigDataResource.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32,66
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/util/BootstrapRegistryHelperCompatibilityTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40-41,44-47,60,73-74,79-80,83-86
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/ReleaseOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28
+apollo-client/src/test/java/com/ctrip/framework/apollo/util/ConfigUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 228-229,253-254,265-266,273-274,289,295-296,306-307,317-318,364-365,375-376
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/PropertiesConfigFile.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 34-35,39,66-68,86
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/importer/ApolloConfigDataLoaderTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 99-100,157,167-168
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/signature/HmacSha1Utils.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/ReleaseOpenApiServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 69-70,76-77,91-92,105-106,129-130
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientExceptionApiTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 41-42,95-96,104-105,110
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/DefaultConfig.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 69,98-99,101-102,205-206,215-216,228-229,247-248,257-258,260,280,284,289,293,321
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/extension/initialize/ApolloClientPropertiesFactoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 42-43
+apollo-client/src/test/java/com/ctrip/framework/apollo/BaseIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 89,93-95,98-99,114,121,132-133,137,197-199,276
+apollo-client/src/main/java/com/ctrip/framework/apollo/model/ConfigChange.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43-44,52
+apollo-core/src/test/java/com/ctrip/framework/apollo/tracer/TracerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 160
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiMockIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 117-118,210,282
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/LocalFileConfigRepositoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 93,138-139,170,208-209
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/ApolloClientMonitorContextTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 18,63,88-91,95-96
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/PropertiesCompatibleFileConfigRepository.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28,42-43,61
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/RemoteConfigRepositoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 152-153,176-177,188-189,222-225,242-245,268-271,281-282,287-288,290,314-315,323,352-353,366-367,369,380-381,383,398-399,410-411,434-435,437-438,462-463,466-469,492-493,497-498,500-501,504-505,594-595,609-610
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/K8sConfigMapConfigRepositoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 42-197,200-202,204
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/ItemOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 33-34,36-37,44-45,57-59,65-66,69-72,77-78,91-93,98-100,105-106,119-120,125-127,132-133,150-152,156-158,163-164,177-179,183-185,192,205-207,210-211,213-216
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/boot/ApolloApplicationContextInitializerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 70-71,103-104,137-138,150-151,162-163,167,175-178
+apollo-client/src/test/java/com/ctrip/framework/apollo/util/ExceptionUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 45-46
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/InstanceOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28,30-32,34-42,44-45,47-49,51-56,58-59
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/integration/ConfigDataIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 70,72,109-110,218,310
+apollo-client/src/test/java/com/ctrip/framework/apollo/integration/ConfigServiceTimeoutIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51-53,85,129,137-138,184,227-229,257-259
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/exporter/impl/NullApolloClientMetricsExporter.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32,35
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/XmlConfigPlaceholderAutoUpdateTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 56-57,92-93,118-121,123-124,127-128,135-136,138-139,164-165,172-173,197-198,200-201,203-204,214-215,236-237,239-240,250-251,269-270,293-294,298-299,302-303,331-332,361-362,369-370,392-393,424-425,483-484
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/XMLConfigAnnotationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 61-62,110-111,113,160-162,167-168,170-171,183-184
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/DefaultConfigMonitorTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 18,52,60,70,78
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/RemoteConfigRepository.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 70-71,115-116,126,134,145-153,165,173,194,211,214,223-224,229,234,272-273,284,287-288,290-291,294-295,298,310-311,315-317,322,325-326,366-367,410
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/internals/PureApolloConfigFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 30-31
+apollo-client/src/test/java/com/ctrip/framework/apollo/util/parser/DurationParserTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 108
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/package-info.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 4-5,9-12,33
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/XmlConfigFile.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 25
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/AbstractOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 70-71,95,106-107
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/InstanceOpenApiServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 54-55,62,64
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/PropertiesConfigFileTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 85-86,98-99,109-110,126-127,166-167,187-188,190,203-204,206
+apollo-core/src/test/java/com/ctrip/framework/apollo/tracer/internals/NullMessageProducerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44
+apollo-client/src/test/java/com/ctrip/framework/apollo/spi/DefaultConfigFactoryManagerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 112-113,121,163-164,186-187
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/AbstractConfigTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 67-68,71-72,114-115,147-150,173-174,183-184,208-209,246-247,331-332
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/util/BeanRegistrationUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 4-6,10-14,75-78,85-88,91
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/RemoteConfigLongPollService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 74,83-87,93-94,100,102-103,108,115-118,129,146,165-166,170,183-184,208,226-227,231,239-240,244-245,247,251,253,255-260,271-272,281-282,286-287,314-315,323,327-328,349-350
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/property/PlaceholderHelperTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 73-105,115-116
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/signature/HmacSha1UtilsTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 38
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/listener/ApolloSpringApplicationRegisterListenerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 38-39,41-42,45-46,50-51,54-57
+apollo-client/src/test/java/com/ctrip/framework/apollo/spi/DefaultConfigFactoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 83-84,113-114,118-119,138-143,151-154,156-157,160-161,164-165,168-169,172-173,198-199,209-210,213,222-225
+apollo-core/src/test/java/com/ctrip/framework/apollo/tracer/internals/DefaultMessageProducerManagerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/DefaultMetaServerProvider.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32,44-45,70
+apollo-client/src/test/java/com/ctrip/framework/apollo/util/parser/DateParserTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 103-104,108-109,111,116
+apollo-core/src/main/java/com/ctrip/framework/apollo/tracer/internals/NullTransaction.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 26,29,32,35
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/event/ApolloClientMonitorEvent.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 69
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/DefaultConfigTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 106,130,133,141-142,149,155,175,181,194,199,216,221,245,251,277,311,317,333,339,355,361,364-365,378,384,387-388,401,407,423,429,432-433,442,445,447,452,454-457,466,469,471,476,478-481,485-488,498-499,503,505,513,515-516,520-521,532,540,542-552,554,566,574,577-578,580-581,588,594,596-599,607,613,616-617,635,638,640-641,646,650,669-670,679,735-736,744-745,759-760,806-807,834,861,881,895,900,925,943-944,948-949,953-954,956
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/system/ApolloClientSystemPropertyInitializerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 52-53
+apollo-client/src/main/java/com/ctrip/framework/apollo/spi/DefaultConfigFactoryManager.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenGrayReleaseRuleItemDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 22-24,26-28,30-32,34-36,38-40,42-44,46-48
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/NullClientBootstrapArgsMonitorApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientNamespaceApiTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 55-56,65-66,75-76,96-97,106
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/ItemOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 43
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/K8sConfigMapConfigRepository.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 45-58,60-65,67-70,72-76,78-79,81-86,88,90-92,94-108,110,112-115,117-120,122-130,132-138,140-143,145-151,153-155,157-168,171-175,177-178,180-182,184-195,197,199-201,203-212,214-218,220-227,229-238,240-244,246-254,256-266,268
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/config/PropertySourcesProcessor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 64-67,69-70,76-77,90-91,98-100,105-106,111,147-150,163-164,166-167,175,181
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/dto/ApolloConfigNotification.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28,68-69
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/utils/UrlUtils.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29-31,33,35-37,39-41
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/api/ApolloClientBootstrapArgsMonitorApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 2,134
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/NamespaceGrayDelReleaseDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 22,24-26,28-30
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/tracer/ApolloClientMonitorMessageProducer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40-44,103-104,108-110,114-116,120-122,126-127,133,139,144-146,153-155,168-169,177
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/DefaultConfigManager.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 44-45,49-50,64,70-71,96-97,99-100
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiClientIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59,62-64,67,80-81,106-107,138-139,183,191,206
+apollo-client/src/test/java/com/ctrip/framework/apollo/util/yaml/YamlParserTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 139-140
+apollo-core/src/main/java/com/ctrip/framework/foundation/spi/provider/ApplicationProvider.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 55
+apollo-client/src/main/java/com/ctrip/framework/apollo/kubernetes/KubernetesManager.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 49,51,53,55-58,60-67,69,71-77,79-80,82-83,85-99,101-110,112-125,127-138,140-155,157-159,161-163,165-171,173-176,178-181,183-185,187-204,206,208-213,215-226,228-237,239-256,258-259,261-269,271
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/JavaConfigPlaceholderTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 68-71,91-94,139-140,144-145,167-168,176,182-185,189-190,197-199,205-208,212-213,226-229,233-234,246-249,253-254,268-271,275-276,298-299,316-317,321-322,340-341,359-362,366-367,385-386,390-391,404-407,411-412,420-421,431-432,439-444,447-448,451-456,464-467,483-484,528-529,806
+apollo-client/src/test/java/com/ctrip/framework/apollo/monitor/internal/event/ApolloClientMonitorEventPublisherTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59-60,71-72
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/enums/ConfigFileFormat.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 94
+apollo-client/src/test/java/com/ctrip/framework/apollo/spi/DefaultConfigRegistryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 77-78
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/config/ConfigPropertySourcesProcessor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 33-34,37-38
+apollo-core/src/test/java/com/ctrip/framework/foundation/FoundationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28-46
+apollo-client/src/test/java/com/ctrip/framework/apollo/util/date/DateUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 26-28,30,32-41
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/exporter/impl/DefaultApolloClientMetricsExporterFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 35-36,38-39,51-52,56-58
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenOrganizationDto.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 20-21,23-25,27-29,31-33,35-37,39-43
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/jmx/ApolloClientJmxMBeanRegister.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 34-35
+apollo-core/src/main/java/com/ctrip/framework/apollo/tracer/internals/NullMessageProducer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29,32,35,38
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/url/OpenApiPathBuilder.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 46
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/url/OpenApiPathBuilderTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 42,49,55,61,63-64,67-68,70-71,80-81,85-86,88-89,93-96,98-100,107-109,117-118,124-125,130,137-138,148-149,157-158,163-167,172-173,175-177,190
+apollo-core/src/test/java/com/ctrip/framework/test/tools/AloneRunner.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32,39,52-53,75-76,81-82,85
+apollo-plugin/apollo-plugin-log4j2/src/test/java/com/ctrip/framework/apollo/plugin/log4j2/ApolloClientConfigurationFactoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 111-112,193-194,227
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenItemDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 63-67
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenReleaseDTO.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 95-100
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/AbstractApolloClientMonitorEventListener.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 34-35,78,83,112-114,117-118
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/spi/ConfigPropertySourcesProcessorHelperTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36-37
+apollo-core/src/main/java/com/ctrip/framework/apollo/tracer/spi/MessageProducer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 64
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/extension/properties/ApolloClientExtensionProperties.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 48,54-55
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/internals/LegacyMetaServerProvider.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 56-57
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/listener/ApolloDeferredLoggerApplicationListener.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28-29
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/util/BootstrapRegistryHelper.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 47-48,51-54,58-63,66-67,75-76,80-81,85-86,113-114,131-132,151-152,172-174,191-193,211-213
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/BootstrapConfigTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 61-62,87-88,90-93,119-120,137-138,162-163,176-177,202-203,217-218,239-240,252-253,273-274,307-308,320-321,342-343,355-356,375-376,407-408,432-433,436-437
+apollo-client/src/test/java/com/ctrip/framework/apollo/spi/ConfigServiceLoadBalancerClientTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 37-38,57
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/AbstractSpringIntegrationTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 107-108,116-117,123-124,157-158,160,175-176,181,183,233-236
+apollo-client/src/test/java/com/ctrip/framework/apollo/spring/config/PropertySourcesProcessorTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 93-94,100-103,105-106,108-109,124-125,131-132,148-149,153,164-165
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/ApolloClientSystemConsts.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 79-80,85-86,102-103,109-110,142-143,153-154,159-160,165-166,176-177,187-188,193-194,200,204-205,209-210,215-216,221-222
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/extend/ApolloStandardHttpRequestRetryHandler.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40-41
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/NamespaceOpenApiService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29-30,38-39,63-64
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/property/AutoUpdateConfigChangeListener.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 53-54,65-66,113-114,117-121,125-126,128-129,144-145,171-172
+apollo-plugin/apollo-plugin-client-prometheus/src/main/java/com/ctrip/framework/apollo/monitor/internal/exporter/impl/PrometheusApolloClientMetricsExporter.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36-37,40-41,60,65-66,76-77
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/StringUtils.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 48-49,53-54,61
+apollo-client/src/main/java/com/ctrip/framework/apollo/ConfigService.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 40,42-47,49-50,52,117-118,143-145,156-157
+apollo-core/src/main/java/com/ctrip/framework/foundation/internals/io/ProxyInputStream.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 51,70,90,112,129,145,159,169,183,232
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/utils/DeferredLoggerFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 28
+apollo-client/src/main/java/com/ctrip/framework/apollo/spring/spi/ApolloConfigRegistrarHelper.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 26-27
+apollo-client/src/main/java/com/ctrip/framework/apollo/internals/JsonConfigFile.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 25
+apollo-client-config-data/src/test/java/com/ctrip/framework/apollo/config/data/listener/ApolloDeferredLoggerApplicationListenerTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 45-46,57-58
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/DefaultConfigMonitor.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 33-34
+apollo-client-config-data/src/main/java/com/ctrip/framework/apollo/config/data/listener/ApolloSpringApplicationRegisterListener.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 27-28
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/parser/Parsers.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 92-93,105-107,125-126,133-134
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/event/ApolloClientMonitorEventFactory.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 29
+apollo-core/src/main/java/com/ctrip/framework/apollo/tracer/internals/cat/CatMessageProducer.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 39,44,49
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/utils/PropertiesUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59
+apollo-core/src/main/java/com/ctrip/framework/apollo/core/enums/ConfigurationChangeType.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 31-32
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/utils/ClassLoaderUtilTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 140-141,176-178
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/RemoteConfigLongPollServiceTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 144-145,188-189,197-198,252-253,259-260,290,325-326,338-341,345-346,370-371,393-394,402-403,413-416,418-419,467-468,474,477-478,493-494,500,525-526,532-534,549-550,556-560,600-601
+apollo-client/src/test/java/com/ctrip/framework/apollo/internals/PropertiesCompatibleFileConfigRepositoryTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 59-60,72-73,98-99,110-111,123-124,135-136
+apollo-client/src/main/java/com/ctrip/framework/apollo/util/yaml/YamlParser.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 69-70,84-85,134-135
+apollo-client/src/main/java/com/ctrip/framework/apollo/monitor/internal/listener/impl/DefaultApolloClientThreadPoolApi.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 36-37,39-40,43-44,47,70,73,76,78-79,81,84,87,90,93,128
+apollo-core/src/test/java/com/ctrip/framework/apollo/core/MetaDomainTest.java
+  s_2d359cac695061::t_35ca8bdcb9b9f3 72-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b2d3444290cbc1788e76559ea22da52941c9b449",
+  "prompts": {},
+  "sessions": {
+    "s_2d359cac695061": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2c0f2cbd-dacb-4bcc-8a5d-9187bae0d46b",
+        "model": "glm-5.2"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}

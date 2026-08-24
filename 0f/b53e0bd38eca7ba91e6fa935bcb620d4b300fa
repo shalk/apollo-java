@@ -1,0 +1,19 @@
+.licenserc.yaml
+  s_2d359cac695061::t_875aa637bbbf3e 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0fb53e0bd38eca7ba91e6fa935bcb620d4b300fa",
+  "prompts": {},
+  "sessions": {
+    "s_2d359cac695061": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2c0f2cbd-dacb-4bcc-8a5d-9187bae0d46b",
+        "model": "glm-5.2"
+      },
+      "human_author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
