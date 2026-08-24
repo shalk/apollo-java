@@ -1,0 +1,30 @@
+.gitignore
+  h_19a015edaf416b 29
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/api/NamespaceOpenApiService.java
+  h_19a015edaf416b 51-52,77-78
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiClient.java
+  h_19a015edaf416b 140-141,181-184
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/client/service/NamespaceOpenApiService.java
+  h_19a015edaf416b 34-37,44-45,50-51,62-63,71-74,79-80,85-86,94-95,101-102,104-107,122,127-130,135-136,147-149,154-156
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceDTO.java
+  h_19a015edaf416b 105-111
+apollo-openapi/src/main/java/com/ctrip/framework/apollo/openapi/dto/OpenNamespaceExtendDTO.java
+  h_19a015edaf416b 58-59
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/api/NamespaceOpenApiServiceTest.java
+  h_19a015edaf416b 54-55
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/ApolloOpenApiMockIntegrationTest.java
+  h_19a015edaf416b 138-139,144,156,161-162
+apollo-openapi/src/test/java/com/ctrip/framework/apollo/openapi/client/service/NamespaceOpenApiServiceTest.java
+  h_19a015edaf416b 76-77,83-87,105-106,112-115,124-125,171-173,201-202,208-211,239-240,268-269
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3d48574e18b4404578fb9813d25289abcf4cc04c",
+  "prompts": {},
+  "humans": {
+    "h_19a015edaf416b": {
+      "author": "shalk(xiao kun) <xshalk@outlook.com>"
+    }
+  }
+}
