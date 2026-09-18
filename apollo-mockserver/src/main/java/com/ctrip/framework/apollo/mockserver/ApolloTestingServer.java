@@ -37,7 +37,6 @@ import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.bridge.SLF4JBridgeHandler;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -81,11 +80,6 @@ public class ApolloTestingServer implements AutoCloseable {
   private boolean closed;
 
   static {
-    // okhttp's MockWebServer logs via java.util.logging directly; having jul-to-slf4j on the
-    // classpath alone doesn't route it, the JUL root handler must be removed and the bridge
-    // installed explicitly so these logs end up in slf4j/logback like everything else.
-    SLF4JBridgeHandler.removeHandlersForRootLogger();
-    SLF4JBridgeHandler.install();
     try {
       System.setProperty("apollo.longPollingInitialDelayInMills", "0");
       CONFIG_SERVICE_LOCATOR = ApolloInjector.getInstance(ConfigServiceLocator.class);
@@ -110,6 +104,7 @@ public class ApolloTestingServer implements AutoCloseable {
   }
 
   public void start() throws IOException {
+    JulSlf4jBridge.install();
     clearForStart();
     server = new MockWebServer();
     final Dispatcher dispatcher = new Dispatcher() {
@@ -146,6 +141,7 @@ public class ApolloTestingServer implements AutoCloseable {
       logger.error("stop apollo server error", e);
     } finally {
       closed = true;
+      JulSlf4jBridge.uninstall();
     }
   }
 
