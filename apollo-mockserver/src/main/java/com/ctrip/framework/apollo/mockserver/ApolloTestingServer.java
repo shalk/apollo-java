@@ -79,6 +79,8 @@ public class ApolloTestingServer implements AutoCloseable {
 
   private boolean closed;
 
+  private boolean bridgeAcquired;
+
   static {
     try {
       System.setProperty("apollo.longPollingInitialDelayInMills", "0");
@@ -104,33 +106,38 @@ public class ApolloTestingServer implements AutoCloseable {
   }
 
   public void start() throws IOException {
-    JulSlf4jBridge.install();
-    clearForStart();
-    server = new MockWebServer();
-    final Dispatcher dispatcher = new Dispatcher() {
-      @Override
-      public MockResponse dispatch(RecordedRequest request) throws InterruptedException {
-        if (request.getPath().startsWith("/notifications/v2")) {
-          String notifications = request.getRequestUrl().queryParameter("notifications");
-          return new MockResponse().setResponseCode(200).setBody(mockLongPollBody(notifications));
+    acquireJulBridge();
+    try {
+      clearForStart();
+      server = new MockWebServer();
+      final Dispatcher dispatcher = new Dispatcher() {
+        @Override
+        public MockResponse dispatch(RecordedRequest request) throws InterruptedException {
+          if (request.getPath().startsWith("/notifications/v2")) {
+            String notifications = request.getRequestUrl().queryParameter("notifications");
+            return new MockResponse().setResponseCode(200).setBody(mockLongPollBody(notifications));
+          }
+          if (request.getPath().startsWith("/configs")) {
+            List<String> pathSegments = request.getRequestUrl().pathSegments();
+            // appId and cluster might be used in the future
+            String appId = pathSegments.get(1);
+            String cluster = pathSegments.get(2);
+            String namespace = pathSegments.get(3);
+            return new MockResponse().setResponseCode(200).setBody(loadConfigFor(appId, namespace));
+          }
+          return new MockResponse().setResponseCode(404);
         }
-        if (request.getPath().startsWith("/configs")) {
-          List<String> pathSegments = request.getRequestUrl().pathSegments();
-          // appId and cluster might be used in the future
-          String appId = pathSegments.get(1);
-          String cluster = pathSegments.get(2);
-          String namespace = pathSegments.get(3);
-          return new MockResponse().setResponseCode(200).setBody(loadConfigFor(appId, namespace));
-        }
-        return new MockResponse().setResponseCode(404);
-      }
-    };
+      };
 
-    server.setDispatcher(dispatcher);
-    server.start();
+      server.setDispatcher(dispatcher);
+      server.start();
 
-    mockConfigServiceUrl("http://localhost:" + server.getPort());
-    started = true;
+      mockConfigServiceUrl("http://localhost:" + server.getPort());
+      started = true;
+    } catch (RuntimeException | IOException e) {
+      releaseJulBridge();
+      throw e;
+    }
   }
 
   public void close() {
@@ -141,7 +148,21 @@ public class ApolloTestingServer implements AutoCloseable {
       logger.error("stop apollo server error", e);
     } finally {
       closed = true;
+      releaseJulBridge();
+    }
+  }
+
+  private void acquireJulBridge() {
+    if (!bridgeAcquired) {
+      JulSlf4jBridge.install();
+      bridgeAcquired = true;
+    }
+  }
+
+  private void releaseJulBridge() {
+    if (bridgeAcquired) {
       JulSlf4jBridge.uninstall();
+      bridgeAcquired = false;
     }
   }
 
