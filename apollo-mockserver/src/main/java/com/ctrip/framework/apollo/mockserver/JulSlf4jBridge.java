@@ -42,6 +42,7 @@ final class JulSlf4jBridge {
   private static Handler[] originalHandlers;
   private static boolean originalUseParentHandlers;
   private static boolean bridged;
+  private static SLF4JBridgeHandler bridgeHandler;
 
   private JulSlf4jBridge() {}
 
@@ -61,7 +62,8 @@ final class JulSlf4jBridge {
     for (Handler handler : originalHandlers) {
       mockWebServerLogger.removeHandler(handler);
     }
-    mockWebServerLogger.addHandler(new SLF4JBridgeHandler());
+    bridgeHandler = new SLF4JBridgeHandler();
+    mockWebServerLogger.addHandler(bridgeHandler);
     mockWebServerLogger.setUseParentHandlers(false);
     bridged = true;
   }
@@ -71,15 +73,25 @@ final class JulSlf4jBridge {
       return;
     }
     Logger mockWebServerLogger = Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME);
-    for (Handler handler : mockWebServerLogger.getHandlers()) {
-      mockWebServerLogger.removeHandler(handler);
-    }
+    mockWebServerLogger.removeHandler(bridgeHandler);
     for (Handler handler : originalHandlers) {
-      mockWebServerLogger.addHandler(handler);
+      if (!containsHandler(mockWebServerLogger.getHandlers(), handler)) {
+        mockWebServerLogger.addHandler(handler);
+      }
     }
     mockWebServerLogger.setUseParentHandlers(originalUseParentHandlers);
     originalHandlers = null;
+    bridgeHandler = null;
     bridged = false;
+  }
+
+  private static boolean containsHandler(Handler[] handlers, Handler target) {
+    for (Handler handler : handlers) {
+      if (handler == target) {
+        return true;
+      }
+    }
+    return false;
   }
 
   /** Package-visible for testing without depending on the actual runtime SLF4J binding. */

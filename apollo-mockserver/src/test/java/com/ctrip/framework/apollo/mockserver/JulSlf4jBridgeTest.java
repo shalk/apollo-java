@@ -19,8 +19,10 @@ package com.ctrip.framework.apollo.mockserver;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.lang.reflect.Field;
 import java.util.logging.Handler;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
@@ -104,6 +106,26 @@ class JulSlf4jBridgeTest {
     }
 
     assertFalse(hasBridgeHandler(mockWebServerLogger));
+  }
+
+  @Test
+  void startupFailureAfterBridgeAcquisitionReleasesBridge() throws Exception {
+    Logger mockWebServerLogger = Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME);
+    ApolloTestingServer server = new ApolloTestingServer();
+
+    Field locatorField = ApolloTestingServer.class.getDeclaredField("CONFIG_SERVICE_LOCATOR");
+    locatorField.setAccessible(true);
+    Object originalLocator = locatorField.get(null);
+    locatorField.set(null, null);
+    try {
+      assertThrows(IllegalStateException.class, server::start,
+          "start() must surface failures that happen after the JUL bridge is acquired");
+      assertFalse(hasBridgeHandler(mockWebServerLogger),
+          "a failed start() must release the JUL bridge it acquired");
+    } finally {
+      locatorField.set(null, originalLocator);
+      server.close();
+    }
   }
 
   private static boolean hasBridgeHandler(Logger logger) {
