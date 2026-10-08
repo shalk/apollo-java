@@ -109,6 +109,25 @@ class JulSlf4jBridgeTest {
   }
 
   @Test
+  void bridgeRetainsLoggerUntilMockWebServerInitializes() throws Exception {
+    ApolloTestingServer server = new ApolloTestingServer() {
+      @Override
+      public void resetOverriddenProperties() {
+        System.gc();
+        super.resetOverriddenProperties();
+      }
+    };
+    try {
+      server.start();
+
+      assertTrue(hasBridgeHandler(Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME)),
+          "the MockWebServer logger must retain its bridge across GC during startup");
+    } finally {
+      server.close();
+    }
+  }
+
+  @Test
   void startupFailureAfterBridgeAcquisitionReleasesBridge() throws Exception {
     Logger mockWebServerLogger = Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME);
     ApolloTestingServer server = new ApolloTestingServer();
