@@ -138,9 +138,9 @@ class JulSlf4jBridgeTest {
     locatorField.set(null, null);
     try {
       assertThrows(IllegalStateException.class, server::start,
-          "start() must surface failures that happen after the JUL bridge is acquired");
+          "start() must surface failures");
       assertFalse(hasBridgeHandler(mockWebServerLogger),
-          "a failed start() must release the JUL bridge it acquired");
+          "a failed start() must not install the JUL bridge");
     } finally {
       locatorField.set(null, originalLocator);
       server.close();

@@ -106,7 +106,6 @@ public class ApolloTestingServer implements AutoCloseable {
   }
 
   public void start() throws IOException {
-    acquireJulBridge();
     try {
       clearForStart();
       server = new MockWebServer();
@@ -134,10 +133,12 @@ public class ApolloTestingServer implements AutoCloseable {
 
       mockConfigServiceUrl("http://localhost:" + server.getPort());
       started = true;
-    } catch (RuntimeException | IOException e) {
-      releaseJulBridge();
-      throw e;
+    } finally {
+      if (!started) {
+        releaseJulBridge();
+      }
     }
+    acquireJulBridge();
   }
 
   public void close() {
