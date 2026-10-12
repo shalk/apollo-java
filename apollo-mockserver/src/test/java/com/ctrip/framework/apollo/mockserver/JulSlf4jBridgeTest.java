@@ -71,16 +71,20 @@ class JulSlf4jBridgeTest {
     ApolloTestingServer serverB = new ApolloTestingServer();
     try {
       serverA.start();
+      serverA.acquireJulBridge();
       serverB.start();
+      serverB.acquireJulBridge();
       assertTrue(hasBridgeHandler(mockWebServerLogger));
 
-      serverA.close();
-      serverA.close();
+      serverA.releaseJulBridge();
+      serverA.releaseJulBridge();
 
       assertTrue(hasBridgeHandler(mockWebServerLogger),
           "bridge must remain installed while server B is still running");
     } finally {
+      serverA.releaseJulBridge();
       serverA.close();
+      serverB.releaseJulBridge();
       serverB.close();
     }
 
@@ -94,13 +98,15 @@ class JulSlf4jBridgeTest {
     ApolloTestingServer neverStarted = new ApolloTestingServer();
     try {
       active.start();
+      active.acquireJulBridge();
       assertTrue(hasBridgeHandler(mockWebServerLogger));
 
-      neverStarted.close();
+      neverStarted.releaseJulBridge();
 
       assertTrue(hasBridgeHandler(mockWebServerLogger),
-          "closing a server that was never started must not release a bridge it never acquired");
+          "releasing a bridge that was never acquired must not affect the active bridge");
     } finally {
+      active.releaseJulBridge();
       active.close();
       neverStarted.close();
     }
@@ -119,16 +125,17 @@ class JulSlf4jBridgeTest {
     };
     try {
       server.start();
-
+      server.acquireJulBridge();
       assertTrue(hasBridgeHandler(Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME)),
           "the MockWebServer logger must retain its bridge across GC during startup");
     } finally {
+      server.releaseJulBridge();
       server.close();
     }
   }
 
   @Test
-  void startupFailureAfterBridgeAcquisitionReleasesBridge() throws Exception {
+  void startupFailureDoesNotInstallBridge() throws Exception {
     Logger mockWebServerLogger = Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME);
     ApolloTestingServer server = new ApolloTestingServer();
 
