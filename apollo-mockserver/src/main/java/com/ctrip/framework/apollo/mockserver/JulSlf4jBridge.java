@@ -20,30 +20,33 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Handler;
 import java.util.logging.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.bridge.SLF4JBridgeHandler;
 
 /**
  * Routes okhttp's MockWebServer logs (which go through java.util.logging directly) to
  * slf4j/logback for the lifetime of active {@link ApolloTestingServer} instances.
  *
- * <p>Unlike {@link SLF4JBridgeHandler#install()}, this only touches the JUL logger used by
+ * <p>Unlike {@code SLF4JBridgeHandler#install()}, this only touches the JUL logger used by
  * MockWebServer, not the JUL root logger, so unrelated JUL handlers elsewhere in the JVM are
  * never removed. It also skips installing when the SLF4J binding is slf4j-jdk14, since bridging
  * JUL to an SLF4J binding that itself delegates back to JUL creates an infinite loop. Calls are
  * reference-counted so concurrently running mock servers don't uninstall the bridge out from
  * under each other.
+ *
+ * <p>Uses reflection to instantiate {@code SLF4JBridgeHandler} so the class can load even when
+ * {@code jul-to-slf4j} is not on the classpath.
  */
 final class JulSlf4jBridge {
 
   private static final org.slf4j.Logger LOG = LoggerFactory.getLogger(JulSlf4jBridge.class);
   private static final String MOCK_WEB_SERVER_LOGGER_NAME = "okhttp3.mockwebserver.MockWebServer";
+  private static final String SLF4J_BRIDGE_HANDLER_CLASS = "org.slf4j.bridge.SLF4JBridgeHandler";
   private static final AtomicInteger ACTIVE = new AtomicInteger(0);
 
   private static Handler[] originalHandlers;
   private static boolean originalUseParentHandlers;
   private static boolean bridged;
   private static Logger mockWebServerLogger;
-  private static SLF4JBridgeHandler bridgeHandler;
+  private static Handler bridgeHandler;
 
   private JulSlf4jBridge() {}
 
@@ -64,10 +67,10 @@ final class JulSlf4jBridge {
       mockWebServerLogger.removeHandler(handler);
     }
     try {
-      bridgeHandler = new SLF4JBridgeHandler();
-    } catch (NoClassDefFoundError e) {
+      bridgeHandler = (Handler) Class.forName(SLF4J_BRIDGE_HANDLER_CLASS).newInstance();
+    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
       LOG.warn("Skipping JUL-to-SLF4J bridge for MockWebServer logs because "
-          + "jul-to-slf4j is not on the classpath");
+          + "jul-to-slf4j is not on the classpath", e);
       mockWebServerLogger.setUseParentHandlers(originalUseParentHandlers);
       for (Handler handler : originalHandlers) {
         mockWebServerLogger.addHandler(handler);
