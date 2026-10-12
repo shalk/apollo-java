@@ -55,6 +55,11 @@ final class JulSlf4jBridge {
       return;
     }
     bridged = false;
+    if (!isBridgeHandlerAvailable()) {
+      LOG.warn("Skipping JUL-to-SLF4J bridge for MockWebServer logs because "
+          + "jul-to-slf4j is not on the classpath");
+      return;
+    }
     if (isJdk14Binding(LoggerFactory.getILoggerFactory().getClass().getName())) {
       LOG.warn("Skipping JUL-to-SLF4J bridge for MockWebServer logs because the SLF4J binding "
           + "is slf4j-jdk14; bridging it would create an infinite JUL<->SLF4J logging loop.");
@@ -66,22 +71,28 @@ final class JulSlf4jBridge {
     for (Handler handler : originalHandlers) {
       mockWebServerLogger.removeHandler(handler);
     }
-    try {
-      bridgeHandler = (Handler) Class.forName(SLF4J_BRIDGE_HANDLER_CLASS).newInstance();
-    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
-      LOG.warn("Skipping JUL-to-SLF4J bridge for MockWebServer logs because "
-          + "jul-to-slf4j is not on the classpath", e);
-      mockWebServerLogger.setUseParentHandlers(originalUseParentHandlers);
-      for (Handler handler : originalHandlers) {
-        mockWebServerLogger.addHandler(handler);
-      }
-      originalHandlers = null;
-      mockWebServerLogger = null;
-      return;
-    }
+    bridgeHandler = newBridgeHandler();
     mockWebServerLogger.addHandler(bridgeHandler);
     mockWebServerLogger.setUseParentHandlers(false);
     bridged = true;
+  }
+
+  private static boolean isBridgeHandlerAvailable() {
+    try {
+      Class.forName(SLF4J_BRIDGE_HANDLER_CLASS);
+      return true;
+    } catch (ClassNotFoundException e) {
+      return false;
+    }
+  }
+
+  private static Handler newBridgeHandler() {
+    try {
+      return (Handler) Class.forName(SLF4J_BRIDGE_HANDLER_CLASS).newInstance();
+    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+      throw new IllegalStateException(
+          "SLF4JBridgeHandler was available during check but not during instantiation", e);
+    }
   }
 
   static synchronized void uninstall() {
