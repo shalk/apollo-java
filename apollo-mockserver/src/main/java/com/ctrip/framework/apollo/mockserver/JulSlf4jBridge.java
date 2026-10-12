@@ -63,7 +63,19 @@ final class JulSlf4jBridge {
     for (Handler handler : originalHandlers) {
       mockWebServerLogger.removeHandler(handler);
     }
-    bridgeHandler = new SLF4JBridgeHandler();
+    try {
+      bridgeHandler = new SLF4JBridgeHandler();
+    } catch (NoClassDefFoundError e) {
+      LOG.warn("Skipping JUL-to-SLF4J bridge for MockWebServer logs because "
+          + "jul-to-slf4j is not on the classpath");
+      mockWebServerLogger.setUseParentHandlers(originalUseParentHandlers);
+      for (Handler handler : originalHandlers) {
+        mockWebServerLogger.addHandler(handler);
+      }
+      originalHandlers = null;
+      mockWebServerLogger = null;
+      return;
+    }
     mockWebServerLogger.addHandler(bridgeHandler);
     mockWebServerLogger.setUseParentHandlers(false);
     bridged = true;
