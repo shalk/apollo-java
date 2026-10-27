@@ -32,9 +32,9 @@ import org.slf4j.LoggerFactory;
  * reference-counted so concurrently running mock servers don't uninstall the bridge out from
  * under each other.
  *
- * <p>The ownership count is only moved once the corresponding logger transition succeeded, so a
- * failed {@link #install()} leaves the bridge reusable and a failed {@link #uninstall()} can be
- * retried instead of driving the count out of sync with the JUL logger state.
+ * <p>The ownership count is only moved once the corresponding logger transition succeeded.
+ * Failed restoration retains the original JUL state for retry: a later installation recovers
+ * ownerless rollback, and a failed final release must be retried by its existing owner.
  *
  * <p>Uses reflection to instantiate {@code SLF4JBridgeHandler} so the class can load even when
  * {@code jul-to-slf4j} is not on the classpath.
@@ -49,13 +49,23 @@ final class JulSlf4jBridge {
   private static Handler[] originalHandlers;
   private static boolean originalUseParentHandlers;
   private static boolean bridged;
+  private static boolean recoveryPending;
   private static Logger mockWebServerLogger;
   private static Handler bridgeHandler;
 
   private JulSlf4jBridge() {}
 
   static synchronized void install() {
-    if (ACTIVE.get() <= 0) {
+    if (recoveryPending) {
+      if (ACTIVE.get() > 0) {
+        throw new IllegalStateException(
+            "JUL bridge teardown is incomplete; the last owner must retry releaseJulBridge()");
+      }
+      // A failed acquisition has no owner to retry release. Recover its original baseline
+      // before taking a new snapshot, so a leftover bridge is never treated as an original.
+      teardown();
+    }
+    if (ACTIVE.get() == 0) {
       installForFirstOwner();
     }
     // Only an owner whose install succeeded consumes a slot, so a failed install cannot make
@@ -76,30 +86,32 @@ final class JulSlf4jBridge {
     }
 
     Logger logger = Logger.getLogger(MOCK_WEB_SERVER_LOGGER_NAME);
-    Handler[] handlers = logger.getHandlers();
-    boolean useParentHandlers = logger.getUseParentHandlers();
+    Handler handler = newBridgeHandler();
+    mockWebServerLogger = logger;
+    originalHandlers = logger.getHandlers();
+    originalUseParentHandlers = logger.getUseParentHandlers();
+    bridgeHandler = handler;
+    recoveryPending = true;
 
-    Handler handler = null;
     try {
-      handler = newBridgeHandler();
-      for (Handler original : handlers) {
+      for (Handler original : originalHandlers) {
         logger.removeHandler(original);
       }
       logger.addHandler(handler);
       logger.setUseParentHandlers(false);
     } catch (RuntimeException | Error e) {
-      // Leave no half-installed bridge behind, otherwise later servers would see a bridge
-      // count that no installed bridge corresponds to.
-      removeHandlerQuietly(logger, handler);
-      restoreHandlers(logger, handlers, useParentHandlers);
+      try {
+        teardown();
+      } catch (RuntimeException | Error cleanupFailure) {
+        if (cleanupFailure != e) {
+          e.addSuppressed(cleanupFailure);
+        }
+      }
       throw e;
     }
 
-    mockWebServerLogger = logger;
-    originalHandlers = handlers;
-    originalUseParentHandlers = useParentHandlers;
-    bridgeHandler = handler;
     bridged = true;
+    recoveryPending = false;
   }
 
   private static boolean isBridgeHandlerAvailable() {
@@ -137,38 +149,30 @@ final class JulSlf4jBridge {
   }
 
   private static void teardown() {
-    mockWebServerLogger.removeHandler(bridgeHandler);
+    recoveryPending = true;
+    if (containsHandler(mockWebServerLogger.getHandlers(), bridgeHandler)) {
+      mockWebServerLogger.removeHandler(bridgeHandler);
+    }
     restoreHandlers(mockWebServerLogger, originalHandlers, originalUseParentHandlers);
+    // Keep the snapshot, logger and last ownership until every restoration operation succeeds.
     originalHandlers = null;
     originalUseParentHandlers = false;
     mockWebServerLogger = null;
     bridgeHandler = null;
     bridged = false;
+    recoveryPending = false;
   }
 
-  /** Restores the previously removed handlers, without ever failing the caller. */
+  /** Restores only missing original handlers, preserving handlers added by other components. */
   private static void restoreHandlers(Logger logger, Handler[] handlers,
       boolean useParentHandlers) {
-    try {
-      for (Handler handler : handlers) {
-        if (!containsHandler(logger.getHandlers(), handler)) {
-          logger.addHandler(handler);
-        }
+    for (Handler handler : handlers) {
+      if (!containsHandler(logger.getHandlers(), handler)) {
+        logger.addHandler(handler);
       }
+    }
+    if (logger.getUseParentHandlers() != useParentHandlers) {
       logger.setUseParentHandlers(useParentHandlers);
-    } catch (RuntimeException | Error e) {
-      LOG.warn("Failed to restore the JUL handlers of {}", logger.getName(), e);
-    }
-  }
-
-  private static void removeHandlerQuietly(Logger logger, Handler handler) {
-    if (handler == null) {
-      return;
-    }
-    try {
-      logger.removeHandler(handler);
-    } catch (RuntimeException | Error e) {
-      LOG.warn("Failed to remove the JUL bridge handler from {}", logger.getName(), e);
     }
   }
 

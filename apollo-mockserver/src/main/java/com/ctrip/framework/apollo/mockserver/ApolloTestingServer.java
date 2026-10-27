@@ -149,9 +149,13 @@ public class ApolloTestingServer implements AutoCloseable {
    * Installs the JUL-to-SLF4J bridge for MockWebServer logs on the currently active server.
    * Callers must pair every call with {@link #releaseJulBridge()}.
    *
-   * <p>A failed installation propagates and leaves neither the JUL logger nor the bridge's
-   * ownership count changed, so it can be retried and a later {@link #releaseJulBridge()} is a
-   * no-op.
+   * <p>A failed installation propagates without acquiring ownership and attempts to restore the
+   * original JUL state. If rollback also fails, the cleanup exception is suppressed on the
+   * installation exception and recovery state is retained for a later acquisition to retry.
+   * Releasing an instance whose acquisition failed is a no-op.
+   *
+   * <p>If another owner's final release is incomplete, acquisition throws until that owner
+   * successfully retries {@link #releaseJulBridge()}.
    */
   public void acquireJulBridge() {
     if (!bridgeAcquired) {
